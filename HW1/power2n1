@@ -1,0 +1,14 @@
+
+power_lookup_table = {}
+
+def power2n_d(n):
+
+    if n in power_lookup_table:
+        return power_lookup_table[n]
+    else:
+        result = 2 ** n
+        power_lookup_table[n] = result
+        return result
+
+print(power2n_d(10))   
+print(power2n_d(20))   
